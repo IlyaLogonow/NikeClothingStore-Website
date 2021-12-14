@@ -1,3 +1,10 @@
+var link = document.querySelector(".main-nav__list");
+
+link.addEventListener("click", function() {
+  alert('я твою маму ебал, чмошник');
+});
+
+
 $('.assortment__slick-gaining-momentum').slick({
   slidesToShow: 2,
   slidesToScroll: 2,
@@ -11,8 +18,8 @@ $('.assortment__slick-gaining-momentum').slick({
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
-        infinite: true,
-        dots: true
+        infinite: false,
+        dots: false
       }
     },
     {
@@ -29,9 +36,6 @@ $('.assortment__slick-gaining-momentum').slick({
         slidesToScroll: 1
       }
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   ]
 });
 
@@ -49,8 +53,8 @@ $('.assortment__slick-sale').slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        infinite: true,
-        dots: true
+        infinite: false,
+        dots: false
       }
     },
     {
@@ -67,19 +71,78 @@ $('.assortment__slick-sale').slick({
         slidesToScroll: 1,
       }
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   ]
 });
 
 
-
-$('.assortment__wrapper').slick({
-  slidesToShow: 1,
+$('.assortment__slick-sport').slick({
+  slidesToShow: 2,
   slidesToScroll: 2,
   autoplay: true,
   autoplaySpeed: 2000,
   arrows: false,
 
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: false,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    }
+  ]
 });
+
+
+$('.assortment__slick-winter').slick({
+  slidesToShow: 2,
+  slidesToScroll: 2,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  arrows: false,
+
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: false,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    }
+  ]
+});
+ 
+ 
+
