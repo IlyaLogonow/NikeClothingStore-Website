@@ -1,10 +1,3 @@
-var link = document.querySelector(".main-nav__list");
-
-link.addEventListener("click", function() {
-  alert('я твою маму ебал, чмошник');
-});
-
-
 $('.assortment__slick-gaining-momentum').slick({
   slidesToShow: 2,
   slidesToScroll: 2,
@@ -123,6 +116,41 @@ $('.assortment__slick-winter').slick({
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
+        infinite: false,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    }
+  ]
+});
+
+
+$('.assortment__slick-categories').slick({
+  slidesToShow: 2,
+  slidesToScroll: 2,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  arrows: false,
+
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
         infinite: false,
         dots: false
       }
