@@ -34,8 +34,8 @@ $('.assortment__slick-gaining-momentum').slick({
 
 
 $('.assortment__slick-sale').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
+  slidesToShow: 2,
+  slidesToScroll: 2,
   autoplay: true,
   autoplaySpeed: 2000,
   arrows: false,
