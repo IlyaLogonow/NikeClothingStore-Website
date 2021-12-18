@@ -15,6 +15,8 @@
 
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper">
@@ -26,9 +28,9 @@
                         <span></span>
                     </label>
 
-                    <img class="logo" src="svg/logo.svg" alt="Nike logo">
+                    <img class="logo" src="svg/logo.svg" alt="Nike logo" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1000">
 
-                    <nav class="main-nav menu__box">
+                    <nav class="main-nav menu__box" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="1000">
                         <ul class="main-nav__list list-reset">
                             <li class="main-nav__item menu__item"><a href="#">Тренд</a></li>
                             <li class="main-nav__item menu__item"><a href="#">Дети</a></li>
@@ -38,7 +40,7 @@
                         </ul>
                     </nav>
 
-                    <div class="header__search-buy">
+                    <div class="header__search-buy" data-aos="fade-left" data-aos-offset="500" data-aos-duration="1000">
                         <a href="#"><img src="svg/search.svg" alt="search"></a>
                         <a href="#"><img src="svg/buy.svg" alt="buy"></a>
                     </div>
@@ -49,12 +51,12 @@
         <main class="contant"> 
             <div class="hero">
                 <div class="container"> 
-                    <div class="account-registration">
+                    <div class="account-registration" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="1000">
                         <p>Еще нет аккаунта? <a href="#">Зарегистрироваться</a></p>
                     </div>
 
-                    <section class="fitness">
-                        <h2 class="fitness__title">Заниматесь фитнесом вместе с нами</h2>
+                    <section class="fitness" data-aos="fade-left" data-aos-duration="1000">
+                        <h2 class="fitness__title">Занимайтесь фитнесом вместе с нами</h2>
 
                         <div class="fitness__link">
                             <a href="#">Подробнее</a>
@@ -66,7 +68,7 @@
                         <h2 class="discounts__title">Скидки</h2>
                         <p class="discounts__subtitle">На куртки, ветровки и мн. др.</p>
 
-                        <div class="discounts__link">
+                        <div class="discounts__link" data-aos="fade-down" data-aos-duration="1000">
                             <a href="#">Позже</a>
                             <a href="#">Смотреть</a>
                         </div>
@@ -74,7 +76,7 @@
                 </div>
             </div>
 
-            <section class="assortment assortment__gaining-momentum">
+            <section class="assortment assortment__gaining-momentum" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
                 <div class="container">
                     <h2 class="assortment__title assortment__title-gaining-momentum">Набирает обороты</h2>
 
@@ -111,7 +113,7 @@
                 </div>
             </section>
 
-            <section class="assortment assortment__sale">
+            <section class="assortment assortment__sale" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
                 <div class="container">
                     <h2 class="assortment__title assortment__title-sale">Распродажа</h2>
 
@@ -166,7 +168,7 @@
                 </div>
             </div>
 
-            <section class="assortment assortment__sport">
+            <section class="assortment assortment__sport" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
                 <div class="container">
                     <h2 class="assortment__title assortment__title-sport">Спорт</h2>
 
@@ -199,7 +201,7 @@
                 </div>
             </section>
 
-            <section class="assortment assortment__winter">
+            <section class="assortment assortment__winter" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
                 <div class="container">
                     <h2 class="assortment__title assortment__title-winter">Зимний ассортимент</h2>
 
@@ -240,7 +242,7 @@
                 </div>
             </section>
 
-            <div class="nike-club container">
+            <div class="nike-club container" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
                 <div class="nike-club__bg">
                     <h3 class="nike-club__title">Присоединяся в Nike Клуб</h3>
                     <p class="nike-club__subtitle">Давая с нами в футбольную команду!</p>
@@ -248,7 +250,7 @@
                 </div>
             </div>
 
-            <section class="assortment assortment__categories">
+            <section class="assortment assortment__categories" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
                 <div class="container">
                     <h2 class="assortment__title assortment__title-categories">Категории</h2>
 
@@ -299,7 +301,7 @@
             </section>
         </main>
 
-        <footer class="footer">
+        <footer class="footer" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
             <div class="footer-container">
                 <div class="footer__row">
                     <div class="footer__row-list">
@@ -350,8 +352,10 @@
     <script src="js/jquery.min.js"></script>
     <script src="slick/slick.min.js"></script>
     <script src="js/script.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        
+        AOS.init();
     </script>
 </body>
 </html>
