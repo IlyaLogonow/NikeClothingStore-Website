@@ -10,4 +10,4 @@
 - Библиотека AOS
 
 ### Демонстрация сайт 
-- https://ilyalogonow.github.io/Nike-Clothing-Store/
+- https://ilyalogonow.github.io/NikeClothingStore-Website/
